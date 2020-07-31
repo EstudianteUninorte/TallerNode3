@@ -219,7 +219,20 @@ Pasar en el body lo siguiente<br>
 </li>
 <li class="has-line-data" data-line-start="172" data-line-end="174">
 <h4 class="code-line" data-line-start=172 data-line-end=173 ><a id="7_Crear_un_middleware_para_restringir_que_el_acceso_al_recurso_GET_apiusers_solo_puede_ser_valido_para_los_usuarios_que_tengan_el_rol_con_el_permiso_listar_usuarios_es_decir_si_otro_usuario_autenticado_no_tiene_el_rol_con_el_permiso_listar_usuario_no_debe_acceder_al_recurso_Agregar_como_respuesta_a_esta_peticion_HTTP_los_roles_y_permisos_de_cada_usuario_en_el_array_de_salida_si_tiene_172"></a>7. Crear un middleware para restringir que el acceso al recurso GET /api/users solo puede ser válido para los usuarios que tengan el rol con el permiso “listar usuarios”; es decir, si otro usuario autenticado no tiene el rol con el permiso “listar usuario” no debe acceder al recurso. Agregar como respuesta a esta petición HTTP, los roles y permisos de cada usuario en el array de salida (si tiene).</h4>
-<p class="has-line-data" data-line-start="173" data-line-end="174">Pendiente</p>
+<p class="has-line-data" data-line-start="173" data-line-end="174">http://localhost:3000/api/users/</p>
+<p class="has-line-data" data-line-start="173" data-line-end="174">
+header 
+x-access-token: xxxxxxxxxxxxxxxxxxxxxxx
+  </p>
+<p class="has-line-data" data-line-start="173" data-line-end="174">
+para login http://localhost:4000/api/users/login
+</p>
+  <pre><code>  
+{
+    "username":"cronaldo",
+    "password":"12345"
+}
+  </pre><code/> 
 </li>
 </ul>
 <ul>
