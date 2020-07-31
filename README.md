@@ -225,14 +225,14 @@ header
 x-access-token: xxxxxxxxxxxxxxxxxxxxxxx
   </p>
 <p class="has-line-data" data-line-start="173" data-line-end="174">
-para login http://localhost:4000/api/users/login
+para login http://localhost:3000/api/users/login
 </p>
   <pre><code>  
 {
-    "username":"cronaldo",
+    "username":"admin",
     "password":"12345"
 }
-  </pre><code/> 
+ <code/></pre>
 </li>
 </ul>
 <ul>
