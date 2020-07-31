@@ -10,7 +10,7 @@ Roberto Campy</p>
 <p class="has-line-data" data-line-start="10" data-line-end="12">para el taller 1 clona este repositorio<br>
 Clona el repositorio <a href="https://github.com/EstudianteUninorte/TallerNodejs">https://github.com/EstudianteUninorte/TallerNodejs</a></p>
 <p class="has-line-data" data-line-start="13" data-line-end="15">Para el taller 2 y 3 clona este repositorio<br>
-<a href="https://github.com/EstudianteUninorte/Taller-3">https://github.com/EstudianteUninorte/Taller-3</a></p>
+<a href="https://github.com/EstudianteUninorte/TallerNode3">https://github.com/EstudianteUninorte/TallerNode3</a></p>
 <p class="has-line-data" data-line-start="16" data-line-end="17">Instala las siguientes dependencias e inicia el servidor.</p>
 <pre><code class="has-line-data" data-line-start="19" data-line-end="24" class="language-sh">$ npm install
 $ npm install express
