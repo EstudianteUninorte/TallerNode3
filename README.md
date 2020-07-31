@@ -240,7 +240,7 @@ para login http://localhost:3000/api/users/login
 <h4 class="code-line" data-line-start=176 data-line-end=177 ><a id="8_Restringir_el_acceso_a_los_siguientes_recursos_dentro_de_la_ruta_apitweets_unicamente_a_los_usuarios_autenticados_en_caso_de_crear_un_nuevo_recurso_dentro_de_la_ruta_apitweets_tambien_se_deberia_tener_la_validacion_del_middleware_176"></a>8. Restringir el acceso a los siguientes recursos dentro de la ruta /api/tweets únicamente a los usuarios autenticados; en caso de crear un nuevo recurso dentro de la ruta /api/tweets, también se debería tener la validación del middleware.</h4>
 </li>
 <li class="has-line-data" data-line-start="177" data-line-end="188">
-<h4 class="code-line" data-line-start=177 data-line-end=178 ><a id="Validaciones_177"></a>Validaciones:</h4>
+<h4 class="code-line" data-line-start=177 data-line-end=178 ><a id="Validaciones_177"></a>9. Validaciones:</h4>
 <p class="has-line-data" data-line-start="178" data-line-end="179">Pendiente</p>
 <ul>
 <li class="has-line-data" data-line-start="179" data-line-end="180">Validar que al crear un usuario, no se puede reutilizar el mismousername ni el mismo email.</li>
@@ -254,7 +254,7 @@ usuario debe tener por lo menos:<br>
 </ul>
 </li>
 <li class="has-line-data" data-line-start="188" data-line-end="192">
-<h4 class="code-line" data-line-start=188 data-line-end=189 ><a id="9_Definir_en_el_recurso_DELETE_apitweets_Borrar_tweet_que_esta_accion_solo_puede_ser_ejecutada_por_el_mismo_usuario_quien_creo_el_tweet_188"></a>9. Definir en el recurso DELETE /api/tweets/ (Borrar tweet) que esta acción solo puede ser ejecutada por el mismo usuario quien creó el tweet</h4>
+<h4 class="code-line" data-line-start=188 data-line-end=189 ><a id="9_Definir_en_el_recurso_DELETE_apitweets_Borrar_tweet_que_esta_accion_solo_puede_ser_ejecutada_por_el_mismo_usuario_quien_creo_el_tweet_188"></a>10. Definir en el recurso DELETE /api/tweets/ (Borrar tweet) que esta acción solo puede ser ejecutada por el mismo usuario quien creó el tweet</h4>
 <pre><code>  Pendiente
 </code></pre>
 </li>
