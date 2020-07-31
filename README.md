@@ -68,7 +68,7 @@ $ npm start
 </li>
 </ul>
 <h3 class="code-line" data-line-start=60 data-line-end=61 ><a id="Taller_2_60"></a>Taller 2</h3>
-<p class="has-line-data" data-line-start="61" data-line-end="62">Clona el repositorio <a href="https://github.com/EstudianteUninorte/Taller-3">https://github.com/EstudianteUninorte/Taller-3</a></p>
+<p class="has-line-data" data-line-start="61" data-line-end="62">Clona el repositorio <a href="https://github.com/EstudianteUninorte/TallerNode3">https://github.com/EstudianteUninorte/TallerNode3</a></p>
 <ul>
 <li class="has-line-data" data-line-start="63" data-line-end="68">
 <h4 class="code-line" data-line-start=63 data-line-end=64 ><a id="PUT_apiusersid__Actualizar_usuario_63"></a>PUT /api/users/:id - Actualizar usuario</h4>
@@ -132,6 +132,21 @@ $ npm start
 </li>
 </ul>
 <h3 class="code-line" data-line-start=114 data-line-end=115 ><a id="Taller_3_114"></a>Taller 3</h3>
+<h6 class="code-line" data-line-start=9 data-line-end=10 ><a id="Installation_9"></a>Crear archivo .env</h6>
+<pre><code>  
+ENV=development
+DEV_DATABASE_HOST=
+DEV_DATABASE_NAME=twitter
+PROD_DATABASE_HOST=cluster-twitter.rwbcf.mongodb.net
+PROD_DATABASE_NAME= cluster-twitter?retryWrites=true&w=majority
+PROD_DATABASE_USER=userdb1
+PROD_DATABASE_PASSWORD=userdb1
+SERVER_PORT=4000
+SERVER_HOST=localhost
+SECRET_KEY= 
+TOKEN_KEY=my_token_key
+LIST_ALL_USER=5f21bc87efed0e07ed885e55
+</code></pre>
 <ul>
 <li class="has-line-data" data-line-start="116" data-line-end="119">
 <h4 class="code-line" data-line-start=116 data-line-end=117 ><a id="1_Documentar_en_el_archivo_READMEmd_todos_los_metodos_soportados_de_la_API_incluyendo_los_dos_talleres_anteriores_116"></a>1. Documentar en el archivo <a href="http://README.md">README.md</a> todos los métodos soportados de la API; incluyendo los dos talleres anteriores.</h4>
