@@ -261,9 +261,8 @@ para login http://localhost:3000/api/users/login
 </li>
 <li class="has-line-data" data-line-start="177" data-line-end="188">
 <h4 class="code-line" data-line-start=177 data-line-end=178 ><a id="Validaciones_177"></a>9. Validaciones:</h4>
-<p class="has-line-data" data-line-start="178" data-line-end="179">Pendiente</p>
 <ul>
-<li class="has-line-data" data-line-start="179" data-line-end="180">Validar que al crear un usuario, no se puede reutilizar el mismousername ni el mismo email.</li>
+<li class="has-line-data" data-line-start="179" data-line-end="180">Validar que al crear un usuario, no se puede reutilizar el mismo username ni el mismo email.</li>
 <li class="has-line-data" data-line-start="180" data-line-end="188">Validar con una expresión regular que la contraseña de un nuevo<br>
 usuario debe tener por lo menos:<br>
 ■  8 caracteres<br>
@@ -272,6 +271,19 @@ usuario debe tener por lo menos:<br>
 ■ 1 número<br>
 ■ 1 caracter especial</li>
 </ul>
+<p class="has-line-data" data-line-start="178" data-line-end="179">Usamos http://localhost:4000/api/users en el postman y ejecutamos en el body</p>
+    <pre><code>  
+{
+    "name":"Juancho",
+    "age":29,
+    "username":"robertoCampi2",
+    "password":"Jose123//",
+    "email":"Robertocampi2@gmail.com",
+    "birthdate":"1990-11-05",
+    "telephones":[123,456],
+    "role_ids": ["5f24268176a924133c9b4e0b"]
+}
+ </code></pre>
 </li>
 <li class="has-line-data" data-line-start="188" data-line-end="192">
 <h4 class="code-line" data-line-start=188 data-line-end=189 ><a id="9_Definir_en_el_recurso_DELETE_apitweets_Borrar_tweet_que_esta_accion_solo_puede_ser_ejecutada_por_el_mismo_usuario_quien_creo_el_tweet_188"></a>10. Definir en el recurso DELETE /api/tweets/ (Borrar tweet) que esta acción solo puede ser ejecutada por el mismo usuario quien creó el tweet</h4>
