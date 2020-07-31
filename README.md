@@ -271,7 +271,7 @@ usuario debe tener por lo menos:<br>
 ■ 1 número<br>
 ■ 1 caracter especial</li>
 </ul>
-<p class="has-line-data" data-line-start="178" data-line-end="179">Usamos http://localhost:4000/api/users en el postman y ejecutamos en el body</p>
+<p class="has-line-data" data-line-start="178" data-line-end="179">Usamos http://localhost:3000/api/users en el postman y ejecutamos en el body</p>
     <pre><code>  
 {
     "name":"Juancho",
