@@ -287,7 +287,11 @@ usuario debe tener por lo menos:<br>
 </li>
 <li class="has-line-data" data-line-start="188" data-line-end="192">
 <h4 class="code-line" data-line-start=188 data-line-end=189 ><a id="9_Definir_en_el_recurso_DELETE_apitweets_Borrar_tweet_que_esta_accion_solo_puede_ser_ejecutada_por_el_mismo_usuario_quien_creo_el_tweet_188"></a>10. Definir en el recurso DELETE /api/tweets/ (Borrar tweet) que esta acción solo puede ser ejecutada por el mismo usuario quien creó el tweet</h4>
-<pre><code>  Pendiente
-</code></pre>
+<p class="has-line-data" data-line-start="178" data-line-end="179">Usamos http://localhost:3000/api/tweets/ en el postman y ejecutamos en el body</p>
+    <pre><code>  
+{
+    "idTweet":"id del tweet"
+}
+ </code></pre>
 </li>
 </ul>
