@@ -6,7 +6,7 @@ const bcrypt = require('bcryptjs');
 const cryptojs = require('crypto-js');
 const jwt = require('jsonwebtoken');
 const config = require("./../../../config");
-
+const validatePwd = require('./../../functions/pws');
 
 const decrypt = (data) =>{
 	var bytes  = cryptojs.AES.decrypt(data, 'secret key 123');
@@ -62,34 +62,53 @@ const getUser = (req, res) => {
 };
 const newUser = (req, res) => {
 	
-	const saltRounds = 10;
-	const salt = bcrypt.genSaltSync(saltRounds);
-	const password = bcrypt.hashSync(req.body.password, salt);
+	if(validatePwd(req.body.password)){
+
+		const saltRounds = 10;
+		const salt = bcrypt.genSaltSync(saltRounds);
+		const password = bcrypt.hashSync(req.body.password, salt);
+		
+		const birthdate = cryptojs.AES.encrypt(req.body.birthdate, 'secret key 123').toString();
+		
+		const user = {
+			name: req.body.name, 
+			age: req.body.age,
+			username: req.body.username,
+			password: password,
+			email: req.body.email,
+			birthdate:birthdate,
+			telephone: req.body.telephone,
+			role_ids: req.body.role_ids
+		}; 
+		
+		if(user.name && user.age && user.username && user.password && user.email){
+			
+			User.find( { $or:[ {'username':user.username}, {'email':user.email}]})
+			.then((response)=>{
+				if(response.length > 0){
+					res.status(500).send("Ya existe un registro con estos datos");
+				}else{
+					const object = new User(user);
+					object.save()
+					.then((response)=>{
+						res.status(201).send(response._id);
+					})
+					.catch((err)=>{
+						res.sendStatus(500);
+					})
+				}
+			
+			}).catch((err)=>{
+				res.sendStatus(500);
+			});
+			
+		}else{
+			res.sendStatus(500);
+		}
 	
-	const birthdate = cryptojs.AES.encrypt(req.body.birthdate, 'secret key 123').toString();
-	
-    const user = {
-        name: req.body.name, 
-        age: req.body.age,
-        username: req.body.username,
-        password: password,
-        email: req.body.email,
-		birthdate:birthdate,
-		telephone: req.body.telephone,
-		role_ids: req.body.role_ids
-    }; 
-    if(user.name && user.age && user.username && user.password && user.email){
-        const object = new User(user);
-        object.save()
-        .then((response)=>{
-            res.status(201).send(response._id);
-        })
-        .catch((err)=>{
-            res.sendStatus(500);
-        })
-    }else{
-        res.sendStatus(500);
-    }
+	}else{
+		res.status(401).send('El password no cumple con las medidas de seguridad basica');
+	}
 };
 
 const updateUser = (req, res) => {

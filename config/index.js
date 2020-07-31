@@ -14,7 +14,7 @@ const config = {
     },
     server:{
         host: process.env.SERVER_HOST,
-        port: 3000
+        port: process.env.SERVER_PORT
     },
 	secretKey: process.env.SECRET_KEY,
 	tokenKey:process.env.TOKEN_KEY,
