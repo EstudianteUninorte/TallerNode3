@@ -155,14 +155,34 @@ LIST_ALL_USER=5f21bc87efed0e07ed885e55
 </li>
 <li class="has-line-data" data-line-start="119" data-line-end="120">
 <h4 class="code-line" data-line-start=119 data-line-end=120 ><a id="2_Tests_Implementar_por_lo_menos_3_tests_del_modelo_User_119"></a>2. Tests: Implementar por lo menos 3 tests del modelo User</h4>
+<pre><code>  Para el modelo user podemos encontrarlo en test/user. Para ejecutar estas pruebas debemos instalar estas dependencias
+npm install @shelf/jest-mongodb --save-dev
+npm install jest --save-dev
+npm install supertest --save-dev
+
+y luego ejecutar
+jest user.test.js
+</code></pre>
 </li>
 </ul>
 <ul>
 <li class="has-line-data" data-line-start="124" data-line-end="125">
 <h4 class="code-line" data-line-start=124 data-line-end=125 ><a id="3_Tests_Implementar_por_lo_menos_2_tests_del_controlador_users_124"></a>3. Tests: Implementar por lo menos 2 tests del controlador users.</h4>
+  <pre><code>  Para el controlador users podemos encontrarlo en test/controller. Para ejecutar estas pruebas debemos instalar estas dependencias
+npm install @shelf/jest-mongodb --save-dev
+npm install jest --save-dev
+npm install supertest --save-dev
+
+y luego ejecutar
+jest peticiones.test.js
+</code></pre>
 </li>
 <li class="has-line-data" data-line-start="125" data-line-end="126">
 <h4 class="code-line" data-line-start=125 data-line-end=126 ><a id="4_Tests_Implementar_ejecucion_de_tests_automatizados_en_circleCI_125"></a>4. Tests: Implementar ejecución de tests automatizados en circleCI</h4>
+<pre><code>  Para la configuración de circleCI debemos ingresar a circleCI y autenticarse.
+Ingresar a proyectos, seleccionar el repositorio -> Setup project e incluir la configuración de nuestro proyecto que corresponde al config.yml y añadimos la configuración.
+Luego ingresar a pipelines -> project settings-> "Enviroment variables" y configuramos nuestras variables de entorno
+</code></pre>  
 </li>
 <li class="has-line-data" data-line-start="126" data-line-end="136">
 <h4 class="code-line" data-line-start=126 data-line-end=127 ><a id="5_Roles_y_Permisos_Definir_2_nuevos_modelos_Permission_y_Role_La_relacion_entre_los_modelos_es_la_siguiente_User_role_ids____Role_permission_ids____Permission_126"></a>5. Roles y Permisos: Definir 2 nuevos modelos Permission y Role. La relación entre los modelos es la siguiente: User (role_ids: [ ]) -&gt; Role (permission_ids: [ ]) -&gt; Permission.</h4>
