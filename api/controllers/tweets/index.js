@@ -50,7 +50,12 @@ const deleteTweet = (req, res) => {
  let idTweet = req.body.idTweet; 
  Tweet.findByIdAndDelete(idTweet, (err, response) =>{
  if(err) res.status(500).send('Imposible eliminar el tweet');
- else res.status(202).send('Tweet eliminado');
+ else 
+ 	{
+		console.log(response);
+		res.status(202).send('Tweet eliminado');
+	 
+	}
  });
 };
 

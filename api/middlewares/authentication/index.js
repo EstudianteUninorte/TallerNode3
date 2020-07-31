@@ -5,7 +5,7 @@ const authentication = (req, res, next) => {
     const token = req.headers["x-access-token"];
     jwt.verify(token, config.tokenKey, (err, decoded) =>{
         if(err){
-            res.sendStatus(401);
+            res.status(500).send(err);
         }else{
             req.userId = decoded.id;
             next();
