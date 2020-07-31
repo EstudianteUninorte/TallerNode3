@@ -3,12 +3,12 @@ const router = express.Router();
 const controller = require('./../../controllers/tweets');
 const logger = require('./../../middlewares/logger');
 const authentication = require('./../../middlewares/authentication');
-
+const {verifedDeleteTweet} = require('./../../middlewares/verifedAllUser');
 
 router.route('/')
     .get(authentication,controller.getTweets)
     .post(authentication,controller.newTweet)
-    .delete(authentication,controller.deleteTweet);
+    .delete(verifedDeleteTweet, controller.deleteTweet);
 
 router.route('/comment').post(authentication,controller.newComment);
 router.route('/:id').get(authentication,controller.getTweet);
