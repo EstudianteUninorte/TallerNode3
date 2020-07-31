@@ -232,7 +232,7 @@ para login http://localhost:3000/api/users/login
     "username":"admin",
     "password":"12345"
 }
- <code/></pre>
+ </code></pre>
 </li>
 </ul>
 <ul>
