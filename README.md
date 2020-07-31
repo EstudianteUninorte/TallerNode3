@@ -6,7 +6,7 @@
 Jose Narvaez<br>
 Roberto Campy</p>
 </blockquote>
-<h3 class="code-line" data-line-start=9 data-line-end=10 ><a id="Installation_9"></a>Installation</h3>
+<h3 class="code-line" data-line-start=9 data-line-end=10 ><a id="Installation_9"></a>Instalación</h3>
 <p class="has-line-data" data-line-start="10" data-line-end="12">para el taller 1 clona este repositorio<br>
 Clona el repositorio <a href="https://github.com/EstudianteUninorte/TallerNodejs">https://github.com/EstudianteUninorte/TallerNodejs</a></p>
 <p class="has-line-data" data-line-start="13" data-line-end="15">Para el taller 2 y 3 clona este repositorio<br>
