@@ -23,12 +23,15 @@ describe('Prueba Controlador User', () => {
         expect(res.status).toEqual(201);
 
     });
+    
 
     var id;
 
     it('Consultar Usuario Test', async () => {
 
-        const res = await request(app).get('/api/users');
+        const login = await request(app).post('/api/users/login').send({username: "admin", password:"12345"});
+
+        const res = await request(app).get('/api/users').set("x-access-token",login.body.token);
 
         let testUser = res.body.filter((e)=>{
             return e.username=="test";
