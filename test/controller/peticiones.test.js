@@ -15,7 +15,7 @@ describe('Prueba Controlador User', () => {
             name: 'Test',
             age: 1,
             username: 'test',
-            password: '123456',
+            password: 'Pr_45678',
             email: 'test@test',
             telephone: ['1234567890']            
         })
